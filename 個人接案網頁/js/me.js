@@ -8,7 +8,7 @@ const projects = [
   {
     title: "股票網站",
     desc: "練習搜尋、分類與卡片顯示的前端作品。",
-    link: 作品集/股票網站/indexed.html,
+    link: "#",
     type: "javascript"
   },
   {
