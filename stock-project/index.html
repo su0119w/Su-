@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>股票首頁</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="img/su.png">
+            <h1>SU台股股市</h1>
+
+        </div>
+        <div class="header-search">
+            <input type="text" class="stock-input" placeholder="查詢股票">
+        </div>
+        <div class="header-nav">
+            <a href="#">首頁</a>
+            <a href="#">關於我</a>
+            <a href="#">自選股</a>
+        </div>
+
+    </header>
+    <nav>
+
+        <a href="#">大盤</a>
+        <a href="#">類股</a>
+        <a href="#">ETF專區</a>
+        <a href="#">漲幅排名</a>
+        <a href="#">跌幅排名</a>
+        <a href="#">成交量排名</a>
+
+    </nav>
+    <main>
+        <section>
+            <div class="main-content">
+                <div class="left">
+                    <h2>股票列表</h2>
+                    <button class="changeUp">漲幅高→低</button>
+                    <button class="priceUp">價格高→低</button>
+                    <select id="stock-select">
+                        <option value="all">全部</option>
+                        <option value="半導體">半導體</option>
+                        <option value="電子">電子</option>
+                        <option value="金融">金融</option>
+                    </select>
+                    <div class="stock-left"></div>
+                </div>
+                <aside class="right">
+                    <h2>自選股 / 熱門 / 新聞</h2>
+                    <div class="stock-right"></div>
+                </aside>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="data/stocks.js"></script>
+</body>
+
+</html>
