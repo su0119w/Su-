@@ -81,7 +81,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    padding: 80px 20px;
 }
 
 .projects {
@@ -89,7 +89,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 60vh;
+    padding: 80px 20px;
 }
 
 .card-list {
@@ -112,7 +112,7 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -133,7 +133,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    padding: 80px 20px;
 }
 .filter-buttons {
     display: flex;
@@ -160,5 +160,20 @@ body {
 }
 label{
     margin: 10px;
+}
+@media (max-width: 768px){
+    .card-list{
+        grid-template-columns: 1fr;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+    }
 }
 

@@ -7,8 +7,8 @@ const projects = [
   },
   {
     title: "股票網站",
-    desc: "練習搜尋、分類與卡片顯示的前端作品。",
-    link: "#",
+    desc: "支援搜尋、分類、排序、自選股與 localStorage 的股票資訊網站。",
+    link: "https://su-delta-pink.vercel.app",
     type: "javascript"
   },
   {
@@ -18,6 +18,7 @@ const projects = [
     type: "html"
   }
 ];
+
 const cardList = document.querySelector(".card-list");
 function renderProjects(data) {
   const html = data.map(function (project) {
@@ -25,7 +26,7 @@ function renderProjects(data) {
     <div class="card">
       <h3>${project.title}</h3>
       <p>${project.desc}</p>
-      <a href="${project.link}">查看作品</a>
+      <a href="${project.link}" target="_blank">查看作品</a>
     </div>
     `
   });
@@ -66,11 +67,13 @@ function setActive(button) {
 
   button.classList.add("active");
 }
+
 let currentType = "all";
 const input = document.querySelector(".search-input")
 input.addEventListener("input",function(){
   updateView();
 })
+
 function updateView() {
   let result = projects;
   const keyword = input.value.trim();
