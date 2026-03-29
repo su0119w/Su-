@@ -41,8 +41,11 @@
             <div class="main-content">
                 <div class="left">
                     <h2>股票列表</h2>
-                    <button class="changeUp">漲幅高→低</button>
-                    <button class="priceUp">價格高→低</button>
+                    <button class="filter-all filter">全部</button>
+                    <button class="filter-up filter">上漲</button>
+                    <button class="filter-down filter">下跌</button>
+                    <button class="changeUp filter">漲幅高→低</button>
+                    <button class="priceUp filter">價格高→低</button>
                     <select id="stock-select">
                         <option value="all">全部</option>
                         <option value="半導體">半導體</option>
@@ -52,17 +55,35 @@
                     <div class="stock-left"></div>
                 </div>
                 <aside class="right">
-                    <h2>自選股 / 熱門 / 新聞</h2>
-                    <div class="stock-right"></div>
+                    <h2>右側資訊</h2>
+                    <div class="panel">
+                        <h3>股票詳細</h3>
+                        <div class="detail-box"></div>
+                    </div>
+                    <div class="panel">
+                        <h3>自選股</h3>
+                        <div class="favorite-list"></div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>熱門股票</h3>
+                        <div class="hot-list"></div>
+                    </div>
+
+                    <div class="panel">
+                        <h3>最新新聞</h3>
+                        <div class="news-list"></div>
+                    </div>
+
                 </aside>
             </div>
 
         </section>
     </main>
     <footer>
-
+        <p>2026@袁御碩</p>
     </footer>
-    <script src="data/stocks.js"></script>
+    <script src="stocks.js"></script>
 </body>
 
 </html>
